@@ -1,26 +1,10 @@
 SecureLab: WAPT Practice Framework
-SecureLab is an interactive framework designed for students and cybersecurity enthusiasts to practice and learn Web Application Penetration Testing (WAPT) in a controlled environment.
+SecureLab is an interactive Web Application Penetration Testing (WAPT) framework designed to help students and cybersecurity enthusiasts practice real-world vulnerabilities in a safe, controlled environment.
 
 Features:
-Interactive Labs: Practice with real-world vulnerabilities like Command Injection, CSRF, File Upload, IDOR, Open Redirect, and XSS (Reflected/Stored).
-Modular Design: Labs are standalone, with no external dependencies.
-User-Friendly: Responsive, clean interface for an intuitive learning experience.
-Folder Structure:
-bash
-Copy code
-CTF Project/
- └── web challenges/
-     └── web labs/
-         ├── index.html    # Main landing page
-         ├── styles.css    # Global styles
-         ├── scripts.js    # JavaScript for interactions
-         └── labs/         # Lab folders
-             ├── Command Injection/
-             ├── CSRF/
-             ├── File Upload Vulnerability/
-             ├── IDOR/
-             ├── Open Redirect/
-             └── XSS/
+Interactive Labs: Includes Command Injection, CSRF (Client/Server-side), File Upload, IDOR, Open Redirect, and XSS (Reflected/Stored).
+Modular Design: Labs are standalone with no external dependencies.
+User-Friendly: Responsive, professional interface for an intuitive learning experience.
 How to Use:
 Clone the Repository:
 
@@ -28,20 +12,19 @@ bash
 Copy code
 git clone https://github.com/PunitShukla1/SecureLab.git
 cd "CTF Project/web challenges/web labs/"
-Launch the Labs: Open index.html in your browser to access and solve labs.
+Launch the Main Page: Open index.html in your browser to navigate and access the labs.
 
-Explore Vulnerabilities: Follow the instructions within each lab to learn and practice penetration testing techniques.
+Practice & Learn: Follow the instructions within each lab to explore and practice different vulnerabilities.
 
-Included Labs:
+Labs Included:
 Command Injection
-CSRF (Client/Server-side)
+CSRF (Client & Server-side)
 File Upload Vulnerability
 IDOR
 Open Redirect
 XSS (Reflected & Stored)
 Contributing:
-Feel free to fork the repo and submit pull requests for new lab additions or improvements.
+Contributions are welcome! Fork the repository and submit pull requests to add or improve labs.
 
 License:
 Licensed under the MIT License.
-
