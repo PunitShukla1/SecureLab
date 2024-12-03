@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Redirect Vulnerability Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Open Redirect Vulnerability Demonstration</h1>
+        <p class="subtitle">This lab demonstrates an Open Redirect vulnerability. You can input any URL and be redirected to it.</p>
+    </header>
+
+    <section>
+        <h2>Redirect to Another URL</h2>
+        <form id="redirect-form">
+            <label for="redirect-url">Enter URL to redirect to:</label>
+            <input type="text" id="redirect-url" placeholder="Enter a URL (e.g., https://example.com)" required>
+            <button type="submit">Redirect</button>
+        </form>
+    </section>
+
+    <section id="redirect-info">
+        <h2>Instructions:</h2>
+        <p>1. Enter a URL (e.g., https://google.com or https://example.com) in the input field.</p>
+        <p>2. Click the "Redirect" button and observe that you will be redirected to the URL you entered.</p>
+        <p>3. The application does not validate or sanitize the input URL, allowing redirection to any site, including potentially malicious ones.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 - Vulnerability Lab</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

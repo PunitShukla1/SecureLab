@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout Styling */
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #61dafb;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #333842;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f61;
+}
+
+/* Dynamic Header Styling */
+.default-style {
+    color: #4caf50;
+}
+
+.changed-style {
+    color: #f44336;
+    font-style: italic;
+    text-shadow: 2px 2px #000000;
+}
+
+/* Styled Boxes */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background: #61dafb;
+    color: #282c34;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* Live Text Preview */
+input {
+    padding: 10px;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+#live-preview {
+    font-weight: bold;
+    color: #61dafb;
+    margin-left: 10px;
+}

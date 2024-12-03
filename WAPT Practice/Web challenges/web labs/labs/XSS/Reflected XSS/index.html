@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflected XSS Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reflected XSS Lab</h1>
+        <p class="subtitle">Understand how unsanitized user inputs can lead to Cross-Site Scripting attacks.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Simulated Search Feature</h2>
+            <p>Enter a search query below. Any query will be echoed back on the page without sanitization.</p>
+            <form action="index.html" method="GET">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" name="query" placeholder="Type your search here...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-result">
+                <h3>Search Results:</h3>
+                <p id="result">
+                    <!-- Display the user query directly -->
+                    <script>
+                        // Simulating unsanitized user input
+                        const params = new URLSearchParams(window.location.search);
+                        const query = params.get('query');
+                        if (query) {
+                            document.write(`You searched for: ${query}`);
+                        }
+                    </script>
+                </p>
+            </div>
+        </section>
+
+        <section class="info">
+            <h2>How It Works</h2>
+            <p>
+                In this lab, user input is taken directly from the query string and rendered on the page without sanitization. 
+                This demonstrates how an attacker could inject a script, leading to potential security issues.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Reflected XSS Lab. Practice with caution.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

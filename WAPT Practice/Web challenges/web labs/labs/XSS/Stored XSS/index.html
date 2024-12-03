@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored XSS Vulnerability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stored XSS Vulnerability Demonstration</h1>
+        <p class="subtitle">This lab demonstrates a Stored XSS vulnerability. Try submitting a comment with a script to see how the system fails to sanitize user input and executes JavaScript.</p>
+    </header>
+
+    <section>
+        <h2>Submit a Comment</h2>
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <textarea id="comment" placeholder="Enter your comment" required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </section>
+
+    <section id="comments-section">
+        <h2>Comments</h2>
+        <div id="comments-list"></div>
+    </section>
+
+    <section class="info">
+        <h3>Instructions:</h3>
+        <p>1. Try submitting a comment with a regular message (e.g., "Great job!").</p>
+        <p>2. Try submitting a malicious script in the comment field, such as:</p>
+        <pre><code>&lt;script&gt;alert('XSS vulnerability triggered');&lt;/script&gt;</code></pre>
+        <p>3. Observe how the system fails to sanitize the input, and the script gets executed when the comment is displayed.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 - Vulnerability Lab</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

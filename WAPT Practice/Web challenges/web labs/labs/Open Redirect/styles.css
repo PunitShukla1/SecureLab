@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout Styling */
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #e91e63;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #333842;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+    background-color: #292d3e;
+    color: #ffffff;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f61;
+}
+
+#redirect-info {
+    margin-top: 30px;
+    background-color: #292d3e;
+    color: #cccccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    background-color: #4c94e6;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    section {
+        width: 90%;
+    }
+}

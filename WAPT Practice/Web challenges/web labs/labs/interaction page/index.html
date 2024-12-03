@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Web Basics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding Web Basics</h1>
+        <p class="subtitle">Explore how HTML, CSS, and JavaScript work together to create web pages.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dynamic Header Interaction</h2>
+            <p>Click the button below to see how JavaScript can dynamically update the styles and content of this header.</p>
+            <button id="dynamic-button">Change Header Style</button>
+            <h3 id="dynamic-header" class="default-style">I am a dynamic header!</h3>
+        </section>
+
+        <section>
+            <h2>Styled Boxes Example</h2>
+            <p>Hover over the boxes below to see CSS in action!</p>
+            <div class="box-container">
+                <div class="box" id="box-1">Box 1</div>
+                <div class="box" id="box-2">Box 2</div>
+                <div class="box" id="box-3">Box 3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Live Text Preview</h2>
+            <p>Type something in the input box to see real-time updates:</p>
+            <input type="text" id="live-input" placeholder="Type here...">
+            <p>Preview: <span id="live-preview"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Basics Lab. Designed for learning and practice.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

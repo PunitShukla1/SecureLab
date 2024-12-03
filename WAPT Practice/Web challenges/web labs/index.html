@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAPT Practice Labs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to WAPT Practice Labs</h1>
+            <p>Click on any lab below to start practicing Web Application Penetration Testing</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="labs-container">
+            <!-- Command Injection Lab -->
+            <div class="lab" onclick="openLab('Command Injection')">
+                <div class="lab-box">
+                    <h3>Command Injection</h3>
+                </div>
+            </div>
+
+            <!-- CSRF Lab -->
+            <div class="lab" onclick="openLab('CSRF/Client Side')">
+                <div class="lab-box">
+                    <h3>CSRF - Client Side</h3>
+                </div>
+            </div>
+
+            <div class="lab" onclick="openLab('CSRF/Server Side')">
+                <div class="lab-box">
+                    <h3>CSRF - Server Side</h3>
+                </div>
+            </div>
+
+            <!-- File Upload Vulnerability Lab -->
+            <div class="lab" onclick="openLab('File Upload Vulnerability')">
+                <div class="lab-box">
+                    <h3>File Upload Vulnerability</h3>
+                </div>
+            </div>
+
+            <!-- IDOR Lab -->
+            <div class="lab" onclick="openLab('IDOR')">
+                <div class="lab-box">
+                    <h3>IDOR</h3>
+                </div>
+            </div>
+
+            <!-- Open Redirect Lab -->
+            <div class="lab" onclick="openLab('Open Redirect')">
+                <div class="lab-box">
+                    <h3>Open Redirect</h3>
+                </div>
+            </div>
+
+            <!-- XSS Labs -->
+            <div class="lab" onclick="openLab('XSS/Reflected XSS')">
+                <div class="lab-box">
+                    <h3>XSS - Reflected</h3>
+                </div>
+            </div>
+
+            <div class="lab" onclick="openLab('XSS/Stored XSS')">
+                <div class="lab-box">
+                    <h3>XSS - Stored</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Application Penetration Testing Labs</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Vulnerability Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSRF Vulnerability Lab</h1>
+        <p class="subtitle">This lab demonstrates how Cross-Site Request Forgery (CSRF) works in web applications.</p>
+    </header>
+
+    <section>
+        <h2>Lab Instructions</h2>
+        <p class="info">
+            In this lab, you will learn how attackers can exploit a CSRF vulnerability to perform actions on behalf of an authenticated user.<br>
+            Follow the steps below:
+        </p>
+        <ul class="info">
+            <li>1. Enter a new email address below to update your profile.</li>
+            <li>2. Click on the "Update Email" button to perform the action.</li>
+            <li>3. Open the "Attacker's Page" (below) in a new tab to simulate the attack.</li>
+            <li>4. Observe that, even though you haven't clicked anything on the "Attacker's Page", the email gets changed automatically, demonstrating the CSRF attack.</li>
+        </ul>
+
+        <h2>Your Profile</h2>
+        <form id="profile-form">
+            <label for="email">Enter your new email address:</label>
+            <input type="email" id="email" placeholder="newemail@example.com" required />
+            <button type="submit">Update Email</button>
+        </form>
+
+        <p id="status"></p>
+
+        <h3>Attacker's Page</h3>
+        <p class="info">In a real-world scenario, this page could be hosted on an attacker’s website. It will automatically make the request to update the email without your interaction.</p>
+        <button id="attack-button">Click to Simulate Attack</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Web Security Labs</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

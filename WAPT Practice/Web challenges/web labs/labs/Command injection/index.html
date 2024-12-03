@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Injection Vulnerability Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Command Injection Vulnerability Lab</h1>
+        <p class="subtitle">This lab demonstrates how a command injection vulnerability can allow an attacker to execute arbitrary JavaScript commands.</p>
+    </header>
+
+    <section>
+        <h2>Lab Instructions</h2>
+        <p class="info">
+            In this lab, you will input a command into the form below. If the application is vulnerable, the command will be executed in the browser. This simulates how command injection flaws could occur.
+            <br>
+            <strong>Warning: Only commands that do not affect your system should be tested in this lab.</strong>
+        </p>
+
+        <form id="command-form">
+            <label for="command">Enter a JavaScript command:</label>
+            <input type="text" id="command" placeholder="e.g., alert('Injected!')" required />
+            <button type="submit">Execute Command</button>
+        </form>
+
+        <h3>Output</h3>
+        <p id="output"></p>
+
+        <h3>Example Injected Commands</h3>
+        <ul class="info">
+            <li><code>alert('Injected!');</code></li>
+            <li><code>console.log('Command Executed');</code></li>
+            <li><code>document.body.style.backgroundColor = 'red';</code></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Web Security Labs</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
