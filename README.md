@@ -59,5 +59,4 @@ This project is licensed under the MIT License. See LICENSE for more details.
 ⭐ Happy Hacking!
 Explore, practice, and enhance your WAPT skills with SecureLab. Stay curious, experiment with vulnerabilities, and keep learning! 💡
 
-vbnet
-Copy code
+
